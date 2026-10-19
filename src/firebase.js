@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDjY0tVaoA2gd6yy_3-a_EWFSYjLKG4Ll0",
-  authDomain: "://firebaseapp.com",
-  projectId: "office-booker-f7b5a",
-  storageBucket: "office-booker-f7b5a.firebasestorage.app",
-  messagingSenderId: "860056755800",
-  appId: "1:860056755800:web:8878eb541f0eee3bbf742d",
-  measurementId: "G-Y7HM35H584"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
